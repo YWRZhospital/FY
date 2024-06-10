@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>薛</title>
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- 引入样式表 -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- 粒子点击特效 -->
+<canvas class="xs" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+<script   type="text/javascript"    src="./assets/script/djtx.js"></script>
+</head>
+ 
+<body>
+
+<!-- 钻石鼠标移动特效 -
+  
+   
+    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    -->
+    <script type="text/javascript" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<!---引入下雪效果     -->
+<script type="text/javascript" src="./assets/script/snow.js"></script>
+    <script type="text/javascript" src="./assets/script/script.js"></script><!-- 引入外部脚本 -->
+    <div class='top'>薛氏集团</div><!-- 图片上方的黑边 -->
+    <section>  <!-- 这个标签里的元素会跟随鼠标移动 -->
+        <img src="xs.png" data-speed='2'
+            class="layer">
+        <div id="div1" data-speed='2.5' class="layer"></div> <!-- 显示系统当前时间 -->
+    </section>
+    <div class='end'> </div><!-- 图片下方的黑边 -->
+    <audio id="vd" controls="controls" autoplay="autoplay" hidden="hidden">
+        <source src="xs.mp3" type="audio/mpeg">
+    </audio>
+</body>
+
+</html>
