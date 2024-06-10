@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*<!-- 设置背景颜色 -->*/
+body {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+ 
+    font-size: 16px;    
+    color: #fff;
+    text-align: center;
+    background-color: #336699;
+    background-size: cover;
+}
+ /*<!-- 设置跟随鼠标移动的元素的位置 -->*/
+section {
+    overflow: hidden;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ /*<!-- <!-- 背景图片的样式 --> -->*/
+section img {
+    filter: blur(1.5px); //给背景图片添加模糊
+    left: 50%;}
+
+.layer {
+    z-index: -9999;
+    width: 50%;
+}
+/*<!-- 图片上方的黑边 -->*/
+.top {
+    height: 120px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+ color: rgb(123, 78, 19);
+    position: absolute;
+    padding: 5px ;
+    background: rgb(9, 11, 11);
+    z-index: 10;
+}
+/*<!-- 图片下方的黑边 -->*/
+.end {
+    height: 120px;
+    width: 100%;
+    background: rgb(2, 12, 16);
+    position: fixed;
+    bottom: 0px;
+    z-index: 9998;
+}
+/*<!-- 时间的样式 -->*/
+#div1 {
+    position:fixed;
+    text-align: center;
+    top: 45%;
+    left: 25%;
+    right: 25%;
+    bottom: 40%;
+    font-size: 90px;
+    z-index: 9999;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 0 0 1px #ae1f1f, 0 0 2px #fffdf7, 0 0 3px #fafa00, 0 0 10px #86a3f3;
+    font-family: 黑体;
+    filter: blur(0.8px);
+}
